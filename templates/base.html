@@ -5,6 +5,7 @@
         <title>BulkyBookApp</title>
         <link rel="stylesheet" href="{% static 'lib/bootstrap/dist/css/bootstrap.min.css' %}" />
         <link rel="stylesheet" href="{% static 'css/site.css' %}" />
+        <link rel="stylesheet" href="{% static 'css/layout.css' %}" />
     </head>
     <body>
         <header>
@@ -27,7 +28,7 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
-            {% block body %}{% end block %}
+            {% block body %}{% endblock %}
         </main>
     </div>
     <footer class="border-top footer text-muted">
