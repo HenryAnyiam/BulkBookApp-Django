@@ -3,5 +3,10 @@
 {% block body %}
 <div class="text-center">
     <h1 class="display-4">Welcome to Mine</h1>
+    {% if category %}
+    <p>There is {{ category|length }} category</p>
+    {% else %}
+    <p>No category</p>
+    {% endif %}
 </div>
 {% endblock %}
