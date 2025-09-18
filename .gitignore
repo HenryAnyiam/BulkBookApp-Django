@@ -2,5 +2,5 @@
 __pycache__
 .env
 db_create.sql
-db_query.sql
+db_*
 *.pyc

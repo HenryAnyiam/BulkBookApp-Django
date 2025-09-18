@@ -3,5 +3,8 @@ from main.models import Category
 
 # Create your views here.
 def index(request):
+    return render(request, 'index.html')
+
+def category(request):
     category_obj = Category.objects.all()
-    return render(request, "index.html", context={'categories': category_obj})
+    return render(request, "category.html", context={'categories': category_obj})

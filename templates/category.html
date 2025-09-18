@@ -1,0 +1,25 @@
+{% extends './base.html' %}
+
+{% block body %}
+<h1 class="display-4">Index Category</h1>
+{% if categories %}
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Category Name</th>
+            <th>Display Order</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for category in categories %}
+            <tr>
+                <td>{{ category.name }}</td>
+                <td>{{ category.display_order }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>No category</p>
+{% endif %}
+{% endblock %}
